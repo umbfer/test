@@ -1,0 +1,168 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2575.6">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 15.0px 0.0px; font: 14.0px Arial; color: #262626; -webkit-text-stroke: #262626}
+    p.p2 {margin: 0.0px 0.0px 15.0px 0.0px; font: 14.0px Arial; color: #262626; -webkit-text-stroke: #262626; min-height: 16.0px}
+    span.s1 {font-kerning: none}
+  </style>
+</head>
+<body>
+<p class="p1"><span class="s1">&lt;html lang="it"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;head&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;title&gt;Pagina Complessa per Web Scraping Avanzato&lt;/title&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;style&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.container { width: 80%; margin: 20px auto; background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>h1, h2 { color: #0056b3; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.product-card { border: 1px solid #ddd; padding: 15px; margin-bottom: 20px; border-radius: 5px; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.product-card h3 { margin-top: 0; color: #333; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.price { font-weight: bold; color: #e67e22; font-size: 1.2em; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.availability.in-stock { color: green; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.availability.out-of-stock { color: red; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>table { width: 100%; border-collapse: collapse; margin-top: 20px; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>th { background-color: #f2f2f2; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.review-card { border: 1px solid #eee; padding: 10px; margin-bottom: 15px; border-radius: 5px; background-color: #f9f9f9; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.review-card .review-title { font-weight: bold; margin-bottom: 5px; color: #007bff; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.review-card .review-meta { font-size: 0.85em; color: #777; margin-bottom: 5px; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.review-card .review-rating { color: orange; font-size: 1.1em; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.footer-info { font-size: 0.9em; color: #666; text-align: center; margin-top: 30px; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/head&gt;</span></p>
+<p class="p1"><span class="s1">&lt;body&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="container"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;h1&gt;Pagina di Test per Scraping Avanzato&lt;/h1&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;p class="intro-text"&gt;Questa pagina contiene dati di fantasia da utilizzarsi per esercitarsi con tecniche di scraping.&lt;/p&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div id="product-section"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;h2&gt;Prodotti in Evidenza&lt;/h2&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;p&gt;Qui troverai alcuni dei nostri migliori prodotti con le loro caratteristiche.&lt;/p&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="product-card" data-product-id="P001"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;h3&gt;Smartphone X1 Pro&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;img src="https://via.placeholder.com/150x100?text=Smartphone" alt="Immagine Smartphone X1 Pro" class="product-image"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;p&gt;Descrizione: Il nostro ultimo modello, con fotocamera da 108MP e 8GB di RAM.&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;p class="price"&gt;Prezzo: € &lt;span class="value"&gt;799.99&lt;/span&gt;&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;p class="availability in-stock"&gt;Disponibilità: In stock (25 unità)&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;span class="category"&gt;Elettronica&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;a href="/products/P001" class="details-link"&gt;Vedi Dettagli&lt;/a&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="product-card" data-product-id="P002"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;h3&gt;Laptop UltraLight Y2&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;img src="https://via.placeholder.com/150x100?text=Laptop" alt="Immagine Laptop UltraLight Y2" class="product-image"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;p&gt;Descrizione: Leggero e potente, perfetto per la produttività in movimento.&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;p class="price"&gt;Prezzo: € &lt;span class="value"&gt;1249.00&lt;/span&gt;&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;p class="availability out-of-stock"&gt;Disponibilità: Non disponibile&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;span class="category"&gt;Elettronica&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;a href="/products/P002" class="details-link"&gt;Vedi Dettagli&lt;/a&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="product-card" data-product-id="P003"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;h3&gt;Cuffie Wireless Z3&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;img src="https://via.placeholder.com/150x100?text=Cuffie" alt="Immagine Cuffie Wireless Z3" class="product-image"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;p&gt;Descrizione: Audio immersivo e cancellazione del rumore attiva.&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;p class="price"&gt;Prezzo: € &lt;span class="value"&gt;149.50&lt;/span&gt;&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;p class="availability in-stock"&gt;Disponibilità: In stock (100 unità)&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;span class="category"&gt;Audio&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;a href="/products/P003" class="details-link"&gt;Vedi Dettagli&lt;/a&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div id="customer-reviews-section"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;h2&gt;Recensioni Dettagliate dei Clienti&lt;/h2&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;p&gt;Esplora le recensioni lasciate dai nostri clienti per ciascun prodotto.&lt;/p&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="product-reviews" data-product-id="P001"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;h3&gt;Recensioni per Smartphone X1 Pro&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="review-card"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;p class="review-title"&gt;Batteria incredibile!&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;p class="review-meta"&gt;Di: &lt;span class="reviewer-name"&gt;Mario Rossi&lt;/span&gt; il &lt;span class="review-date"&gt;2025-06-15&lt;/span&gt;&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;p class="review-rating" data-rating="5"&gt;★★★★★&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;p class="review-body"&gt;Sono rimasto sorpreso dalla durata della batteria. Lo uso intensamente tutto il giorno e non ho problemi ad arrivare a sera. Ottimo acquisto!&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="review-card"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;p class="review-title"&gt;Fotocamera top!&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;p class="review-meta"&gt;Di: &lt;span class="reviewer-name"&gt;Chiara Bianchi&lt;/span&gt; il &lt;span class="review-date"&gt;2025-06-18&lt;/span&gt;&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;p class="review-rating" data-rating="5"&gt;★★★★★&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;p class="review-body"&gt;Le foto sono nitidissime e i colori vibranti. La modalità notturna è impressionante. Consigliatissimo per chi ama fotografare!&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                 </span>&lt;div class="review-card"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;p class="review-title"&gt;Veloce e reattivo&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;p class="review-meta"&gt;Di: &lt;span class="reviewer-name"&gt;Luca Gialli&lt;/span&gt; il &lt;span class="review-date"&gt;2025-06-20&lt;/span&gt;&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;p class="review-rating" data-rating="4"&gt;★★★★☆&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;p class="review-body"&gt;Il telefono è super veloce, apre le app in un lampo. A volte scalda un po' durante sessioni di gioco lunghe, ma niente di grave.&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="product-reviews" data-product-id="P002"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;h3&gt;Recensioni per Laptop UltraLight Y2&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="review-card"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;p class="review-title"&gt;Leggerissimo e performante&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;p class="review-meta"&gt;Di: &lt;span class="reviewer-name"&gt;Anna Neri&lt;/span&gt; il &lt;span class="review-date"&gt;2025-06-10&lt;/span&gt;&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;p class="review-rating" data-rating="4"&gt;★★★★☆&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;p class="review-body"&gt;Lo porto ovunque senza problemi, è veramente leggero. Per l'uso quotidiano e un po' di editing video è perfetto. La batteria dura molto.&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="review-card"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;p class="review-title"&gt;Ottimo display&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;p class="review-meta"&gt;Di: &lt;span class="reviewer-name"&gt;Giovanni Verdi&lt;/span&gt; il &lt;span class="review-date"&gt;2025-06-12&lt;/span&gt;&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;p class="review-rating" data-rating="5"&gt;★★★★★&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;p class="review-body"&gt;Lo schermo è fantastico, colori vividi e ottima risoluzione. Lavorare sul codice o guardare film è un piacere.&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="review-card"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;p class="review-title"&gt;Troppo costoso per le mie esigenze&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;p class="review-meta"&gt;Di: &lt;span class="reviewer-name"&gt;Paolo Blu&lt;/span&gt; il &lt;span class="review-date"&gt;2025-06-16&lt;/span&gt;&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;p class="review-rating" data-rating="3"&gt;★★★☆☆&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;p class="review-body"&gt;Funziona bene, ma per quello che ci faccio (navigazione e mail) forse ho speso troppo. Ho trovato offerte migliori dopo l'acquisto.&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="product-reviews" data-product-id="P003"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;h3&gt;Recensioni per Cuffie Wireless Z3&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="review-card"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;p class="review-title"&gt;Audio pulito e isolamento buono&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;p class="review-meta"&gt;Di: &lt;span class="reviewer-name"&gt;Francesca Rosa&lt;/span&gt; il &lt;span class="review-date"&gt;2025-06-08&lt;/span&gt;&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;p class="review-rating" data-rating="4"&gt;★★★★☆&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;p class="review-body"&gt;L'audio è chiaro e bilanciato. La cancellazione del rumore funziona bene in ufficio, mi permette di concentrarmi.&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="review-card"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;p class="review-title"&gt;Comode ma il microfono...&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;p class="review-meta"&gt;Di: &lt;span class="reviewer-name"&gt;Roberto Marrone&lt;/span&gt; il &lt;span class="review-date"&gt;2025-06-11&lt;/span&gt;&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;p class="review-rating" data-rating="3"&gt;★★★☆☆&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;p class="review-body"&gt;Molto comode da indossare per ore. Purtroppo il microfono non è eccezionale per le chiamate, a volte gli altri non mi sentono bene.&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="review-card"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;p class="review-title"&gt;Ottimo rapporto qualità/prezzo&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;p class="review-meta"&gt;Di: &lt;span class="reviewer-name"&gt;Sara Viola&lt;/span&gt; il &lt;span class="review-date"&gt;2025-06-19&lt;/span&gt;&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;p class="review-rating" data-rating="5"&gt;★★★★★&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;p class="review-body"&gt;Per il prezzo, sono davvero fantastiche. Durata della batteria eccellente e si connettono subito. Molto soddisfatta!&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                 </span>&lt;div class="review-card"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;p class="review-title"&gt;Design accattivante&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;p class="review-meta"&gt;Di: &lt;span class="reviewer-name"&gt;Marco Arancio&lt;/span&gt; il &lt;span class="review-date"&gt;2025-06-22&lt;/span&gt;&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;p class="review-rating" data-rating="4"&gt;★★★★☆&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;p class="review-body"&gt;Oltre alla qualità audio, mi piace molto anche il design moderno. Si abbinano bene a tutto.&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="footer-info"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;p&gt;&amp;copy; 2025 Esempio Di Dati - Tutti i diritti riservati.&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;p&gt;Contattaci: &lt;a href="mailto:info@esempio.com"&gt;info@esempio.com&lt;/a&gt;&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;/body&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/html&gt;</span></p>
+</body>
+</html>
