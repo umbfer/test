@@ -1,39 +1,152 @@
-<html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Complessa per Web Scraping Avanzato</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
+        .container { width: 80%; margin: 20px auto; background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        h1, h2 { color: #0056b3; }
+        .product-card { border: 1px solid #ddd; padding: 15px; margin-bottom: 20px; border-radius: 5px; }
+        .product-card h3 { margin-top: 0; color: #333; }
+        .price { font-weight: bold; color: #e67e22; font-size: 1.2em; }
+        .availability.in-stock { color: green; }
+        .availability.out-of-stock { color: red; }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background-color: #f2f2f2; }
+        .review-card { border: 1px solid #eee; padding: 10px; margin-bottom: 15px; border-radius: 5px; background-color: #f9f9f9; }
+        .review-card .review-title { font-weight: bold; margin-bottom: 5px; color: #007bff; }
+        .review-card .review-meta { font-size: 0.85em; color: #777; margin-bottom: 5px; }
+        .review-card .review-rating { color: orange; font-size: 1.1em; }
+        .footer-info { font-size: 0.9em; color: #666; text-align: center; margin-top: 30px; }
+    </style>
+</head>
 <body>
-<!-- #######  THIS IS A COMMENT - Visible only in the source editor #########-->
 
-<div class="firstpart">
-<h2>This is an example web page</h2>
-<p style="font-size: 1.5em;">I am providing some fake data to let you experiment with the data extraction capabilities of BeautifulSoup 4.&nbsp;<img src="https://html5-editor.net/images/smiley.png" alt="smiley" /></p>
-</div>
-  
-<div class="secondpart">
-<table class="editorDemoTable">
-<tbody>
-<tr>
-<td><strong>Name</strong></td>
-<td><strong>City</strong></td>
-<td><strong>Age</strong></td>
-</tr>
-<tr>
-<td>John</td>
-<td>Chicago</td>
-<td>23</td>
-</tr>
-<tr>
-<td>Lucy</td>
-<td>Wisconsin</td>
-<td>19</td>
-</tr>
-<tr>
-<td>Amanda</td>
-<td>Madison</td>
-<td>22</td>
-</tr>
-</tbody>
-</table>
-<p>This is a table you can experiment with.</p>
-</div>
+    <div class="container">
+        <h1>Pagina di Test per Scraping Avanzato</h1>
+        <p class="intro-text">Questa pagina contiene dati di fantasia da utilizzarsi per esercitarsi con tecniche di scraping.</p>
+
+        <div id="product-section">
+            <h2>Prodotti in Evidenza</h2>
+            <p>Qui troverai alcuni dei nostri migliori prodotti con le loro caratteristiche.</p>
+
+            <div class="product-card" data-product-id="P001">
+                <h3>Smartphone X1 Pro</h3>
+                <img src="https://via.placeholder.com/150x100?text=Smartphone" alt="Immagine Smartphone X1 Pro" class="product-image">
+                <p>Descrizione: Il nostro ultimo modello, con fotocamera da 108MP e 8GB di RAM.</p>
+                <p class="price">Prezzo: € <span class="value">799.99</span></p>
+                <p class="availability in-stock">Disponibilità: In stock (25 unità)</p>
+                <span class="category">Elettronica</span>
+                <a href="/products/P001" class="details-link">Vedi Dettagli</a>
+            </div>
+
+            <div class="product-card" data-product-id="P002">
+                <h3>Laptop UltraLight Y2</h3>
+                <img src="https://via.placeholder.com/150x100?text=Laptop" alt="Immagine Laptop UltraLight Y2" class="product-image">
+                <p>Descrizione: Leggero e potente, perfetto per la produttività in movimento.</p>
+                <p class="price">Prezzo: € <span class="value">1249.00</span></p>
+                <p class="availability out-of-stock">Disponibilità: Non disponibile</p>
+                <span class="category">Elettronica</span>
+                <a href="/products/P002" class="details-link">Vedi Dettagli</a>
+            </div>
+
+            <div class="product-card" data-product-id="P003">
+                <h3>Cuffie Wireless Z3</h3>
+                <img src="https://via.placeholder.com/150x100?text=Cuffie" alt="Immagine Cuffie Wireless Z3" class="product-image">
+                <p>Descrizione: Audio immersivo e cancellazione del rumore attiva.</p>
+                <p class="price">Prezzo: € <span class="value">149.50</span></p>
+                <p class="availability in-stock">Disponibilità: In stock (100 unità)</p>
+                <span class="category">Audio</span>
+                <a href="/products/P003" class="details-link">Vedi Dettagli</a>
+            </div>
+        </div>
+
+        <div id="customer-reviews-section">
+            <h2>Recensioni Dettagliate dei Clienti</h2>
+            <p>Esplora le recensioni lasciate dai nostri clienti per ciascun prodotto.</p>
+
+            <div class="product-reviews" data-product-id="P001">
+                <h3>Recensioni per Smartphone X1 Pro</h3>
+                <div class="review-card">
+                    <p class="review-title">Batteria incredibile!</p>
+                    <p class="review-meta">Di: <span class="reviewer-name">Mario Rossi</span> il <span class="review-date">2025-06-15</span></p>
+                    <p class="review-rating" data-rating="5">★★★★★</p>
+                    <p class="review-body">Sono rimasto sorpreso dalla durata della batteria. Lo uso intensamente tutto il giorno e non ho problemi ad arrivare a sera. Ottimo acquisto!</p>
+                </div>
+                <div class="review-card">
+                    <p class="review-title">Fotocamera top!</p>
+                    <p class="review-meta">Di: <span class="reviewer-name">Chiara Bianchi</span> il <span class="review-date">2025-06-18</span></p>
+                    <p class="review-rating" data-rating="5">★★★★★</p>
+                    <p class="review-body">Le foto sono nitidissime e i colori vibranti. La modalità notturna è impressionante. Consigliatissimo per chi ama fotografare!</p>
+                </div>
+                 <div class="review-card">
+                    <p class="review-title">Veloce e reattivo</p>
+                    <p class="review-meta">Di: <span class="reviewer-name">Luca Gialli</span> il <span class="review-date">2025-06-20</span></p>
+                    <p class="review-rating" data-rating="4">★★★★☆</p>
+                    <p class="review-body">Il telefono è super veloce, apre le app in un lampo. A volte scalda un po' durante sessioni di gioco lunghe, ma niente di grave.</p>
+                </div>
+            </div>
+
+            <div class="product-reviews" data-product-id="P002">
+                <h3>Recensioni per Laptop UltraLight Y2</h3>
+                <div class="review-card">
+                    <p class="review-title">Leggerissimo e performante</p>
+                    <p class="review-meta">Di: <span class="reviewer-name">Anna Neri</span> il <span class="review-date">2025-06-10</span></p>
+                    <p class="review-rating" data-rating="4">★★★★☆</p>
+                    <p class="review-body">Lo porto ovunque senza problemi, è veramente leggero. Per l'uso quotidiano e un po' di editing video è perfetto. La batteria dura molto.</p>
+                </div>
+                <div class="review-card">
+                    <p class="review-title">Ottimo display</p>
+                    <p class="review-meta">Di: <span class="reviewer-name">Giovanni Verdi</span> il <span class="review-date">2025-06-12</span></p>
+                    <p class="review-rating" data-rating="5">★★★★★</p>
+                    <p class="review-body">Lo schermo è fantastico, colori vividi e ottima risoluzione. Lavorare sul codice o guardare film è un piacere.</p>
+                </div>
+                <div class="review-card">
+                    <p class="review-title">Troppo costoso per le mie esigenze</p>
+                    <p class="review-meta">Di: <span class="reviewer-name">Paolo Blu</span> il <span class="review-date">2025-06-16</span></p>
+                    <p class="review-rating" data-rating="3">★★★☆☆</p>
+                    <p class="review-body">Funziona bene, ma per quello che ci faccio (navigazione e mail) forse ho speso troppo. Ho trovato offerte migliori dopo l'acquisto.</p>
+                </div>
+            </div>
+
+            <div class="product-reviews" data-product-id="P003">
+                <h3>Recensioni per Cuffie Wireless Z3</h3>
+                <div class="review-card">
+                    <p class="review-title">Audio pulito e isolamento buono</p>
+                    <p class="review-meta">Di: <span class="reviewer-name">Francesca Rosa</span> il <span class="review-date">2025-06-08</span></p>
+                    <p class="review-rating" data-rating="4">★★★★☆</p>
+                    <p class="review-body">L'audio è chiaro e bilanciato. La cancellazione del rumore funziona bene in ufficio, mi permette di concentrarmi.</p>
+                </div>
+                <div class="review-card">
+                    <p class="review-title">Comode ma il microfono...</p>
+                    <p class="review-meta">Di: <span class="reviewer-name">Roberto Marrone</span> il <span class="review-date">2025-06-11</span></p>
+                    <p class="review-rating" data-rating="3">★★★☆☆</p>
+                    <p class="review-body">Molto comode da indossare per ore. Purtroppo il microfono non è eccezionale per le chiamate, a volte gli altri non mi sentono bene.</p>
+                </div>
+                <div class="review-card">
+                    <p class="review-title">Ottimo rapporto qualità/prezzo</p>
+                    <p class="review-meta">Di: <span class="reviewer-name">Sara Viola</span> il <span class="review-date">2025-06-19</span></p>
+                    <p class="review-rating" data-rating="5">★★★★★</p>
+                    <p class="review-body">Per il prezzo, sono davvero fantastiche. Durata della batteria eccellente e si connettono subito. Molto soddisfatta!</p>
+                </div>
+                 <div class="review-card">
+                    <p class="review-title">Design accattivante</p>
+                    <p class="review-meta">Di: <span class="reviewer-name">Marco Arancio</span> il <span class="review-date">2025-06-22</span></p>
+                    <p class="review-rating" data-rating="4">★★★★☆</p>
+                    <p class="review-body">Oltre alla qualità audio, mi piace molto anche il design moderno. Si abbinano bene a tutto.</p>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="footer-info">
+            <p>&copy; 2025 Esempio Di Dati - Tutti i diritti riservati.</p>
+            <p>Contattaci: <a href="mailto:info@esempio.com">info@esempio.com</a></p>
+        </div>
+    </div>
 
 </body>
 </html>
